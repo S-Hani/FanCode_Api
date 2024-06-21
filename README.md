@@ -1,3 +1,3 @@
-- Install Java 17+
+- Install Java 22+
 - Install Git 
-- Install Maven 3.9+
+- Install Maven 3.9.8+
