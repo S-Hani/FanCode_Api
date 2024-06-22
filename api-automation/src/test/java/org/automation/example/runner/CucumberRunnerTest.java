@@ -1,6 +1,5 @@
 package org.automation.example.runner;
 
-import io.cucumber.spring.CucumberContextConfiguration;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import io.restassured.RestAssured;

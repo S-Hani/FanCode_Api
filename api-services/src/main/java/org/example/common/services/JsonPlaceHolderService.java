@@ -1,7 +1,6 @@
 package org.example.common.services;
 
 import org.example.common.pojo.*;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 

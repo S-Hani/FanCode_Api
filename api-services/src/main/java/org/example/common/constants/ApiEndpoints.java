@@ -1,7 +1,5 @@
 package org.example.common.constants;
 
-import java.net.URI;
-
 public class ApiEndpoints {
     public static final String GET_POSTS = "/posts";
     public static final String GET_USERS = "/users";
