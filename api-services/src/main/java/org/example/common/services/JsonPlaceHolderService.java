@@ -1,11 +1,10 @@
-package org.example.services;
+package org.example.common.services;
 
-import org.example.pojo.*;
+import org.example.common.pojo.*;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
 public interface JsonPlaceHolderService {
   List<Post> getAllPosts();
   List<Comment> getAllComments();

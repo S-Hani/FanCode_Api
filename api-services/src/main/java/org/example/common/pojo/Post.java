@@ -1,4 +1,4 @@
-package org.example.pojo;
+package org.example.common.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Post {
-    public int userId;
-    public int id;
-    public String title;
-    public String body;
+   private int userId;
+   private int id;
+   private String title;
+   private String body;
 }

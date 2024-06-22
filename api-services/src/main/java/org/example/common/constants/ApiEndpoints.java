@@ -1,4 +1,4 @@
-package org.example.constants;
+package org.example.common.constants;
 
 import java.net.URI;
 
@@ -9,5 +9,7 @@ public class ApiEndpoints {
     public static final String GET_TODOS = "/todos";
     public static final String GET_COMMENTS = "/comments";
     public static final String GET_PHOTOS = "/photos";
+
+    public static final String BASE_URI = "http://jsonplaceholder.typicode.com";
 
 }
