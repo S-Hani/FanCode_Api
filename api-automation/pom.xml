@@ -7,15 +7,15 @@
     <groupId>org.example</groupId>
     <artifactId>api-automation</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+        <maven.surefire.plugin.version>3.1.2</maven.surefire.plugin.version>
+        <surefire.testng.version>3.2.3</surefire.testng.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
@@ -34,8 +34,6 @@
             <version>3.3.1</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
     <build>
         <plugins>
@@ -47,6 +45,32 @@
                     <source>22</source>
                     <target>22</target>
                 </configuration>
+            </plugin>
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.plugin.version}</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/suite/FancodeSuite.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>surefire-testng</artifactId>
+                        <version>${surefire.testng.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>

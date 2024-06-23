@@ -59,8 +59,8 @@ public class FirstStepDef {
     public void userCompletedTaskPercentageShouldBe(String operator, int value) {
         List<ToDo> tasks = knowsContext.getToDos().stream().filter(todo -> usersUnderTest.stream().anyMatch(user -> user.getId() == todo.getUserId())).toList();
         List<ToDo> completedTasks = tasks.stream().filter(ToDo::isCompleted).toList();
-        logger.info("Total tasks of users belonging to city " + tasks.size());
-        logger.info("Total completed tasks of users belonging to city " + completedTasks.size());
+        logger.info("Total tasks of users belonging to city: " + tasks.size());
+        logger.info("Total completed tasks of users belonging to city: " + completedTasks.size());
 
         if (Operator.valueOfLabel(operator) == Operator.GT) {
             Assert.assertTrue(100.0 * completedTasks.size() / tasks.size() > value);

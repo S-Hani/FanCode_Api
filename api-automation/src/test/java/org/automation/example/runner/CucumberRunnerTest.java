@@ -13,7 +13,11 @@ import static org.example.common.constants.ApiEndpoints.BASE_URI;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"org.automation.example"},
-        tags = ""
+        tags = "",
+        plugin = {
+                "pretty",
+                "html:target/cucumber/report.html"
+        }
 )
 @EnableAutoConfiguration
 @ComponentScan
