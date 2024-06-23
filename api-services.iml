@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/api-services" dumb="true">
+      <sourceFolder url="file://$MODULE_DIR$/api-services/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/api-services/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/api-services/src/test/java" isTestSource="true" />
+    </content>
+  </component>
+</module>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run-All-Tests">
+
+    <test name="Fancode-Suite-1">
+        <classes>
+            <class name="org.automation.example.runner.CucumberRunnerTest"/>
+        </classes>
+    </test>
+
+</suite>
